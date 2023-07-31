@@ -1,0 +1,45 @@
+:root{
+--gradient: linear-gradient(180deg, rgb(64, 73, 119) 0%, rgb(59, 105, 167) 100%);
+--menu-color: rgb(45, 47, 61);
+--light-primary:white;
+--dark-primary:rgb(31, 29, 29);
+--light-secondary:rgb(216, 220, 231);
+--dark-secondary:rgb(39, 38, 38);
+--dark-text: rgb(255, 255, 255);
+--light-text:rgb(8, 13, 27);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
+    height:100%;
+}
+
+header{
+    background-color: var(--light-primary);
+grid-column: 2/3;
+}
+
+.menu{
+    
+    background-image: var(--gradient);
+    grid-column:1/2;
+    grid-row: 3/1;
+    box-shadow: 5;
+    color: var(--dark-text);
+}
+.content{
+    grid-column: 2/3;
+    background-color: var(--light-secondary);
+
+}
