@@ -27,8 +27,36 @@ body{
 }
 
 header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    gap: 10px;
     background-color: var(--light-primary);
 grid-column: 2/3;
+}
+
+header .profile{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.header-buttons button{
+border-radius: 50px;
+background-color: rgb(64, 73, 119);
+color: var(--dark-text);
+border: none;
+padding: 5px 15px;
+}
+.search input{
+    background-color: var(--light-secondary);
+    border-radius: 50px;
+    width: 80%;
+    height: 20px;
+    border: none;
+}
+.hello p{
+    font-size: smaller;
 }
 
 .menu{
